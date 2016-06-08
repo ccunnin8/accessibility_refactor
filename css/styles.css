@@ -19,7 +19,7 @@ a {
   color: #ccc;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #999;
 }
 
@@ -238,3 +238,4 @@ a.social:hover {
     margin: 40px auto;
   }
 }
+

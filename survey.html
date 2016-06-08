@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,14 +18,14 @@
       </ul>
     </div>
 
-    <header>
+    <header role="banner">
       <h1>Accessible Frog</h1>
       <h2>We make awesome music</h2>
     </header>
 
-    <main>
-      <p class= "heading">Survey</p>
-      <div class="card">
+    <main role="main">
+      <h1>Survey</h1>
+      <div class="card" role="article">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="concert goers rocking out">
           <div class="container">
@@ -60,18 +60,23 @@
           </div>
         </div>
       </div>
-      <p class= "heading">Newsletter</p>
-      <div class="card">
+      <h1>Newsletter</h1>
+      <div class="card" role="article">
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="guitarist and drummer jamming">
             <div class="container">
               <form class="newsletter">
-                <fieldset>
-                  <legend>Newsletter Signup Information</legend>
-                  <label for="name">Name: <input id="name" type ="text" name="textfield"></label>
-                  <label for="email">Email: <input id="email" type ="email" name="textfield"></label>
-                  <label for="email2">Retype Email: <input id="email2" type ="email" name="textfield"></label>
-                  <button type="submit">Sign Up</button>
+                <fieldset class="flexbox-reverse">
+                  <div class="flexbox-reverse">
+                    <legend>Newsletter Signup Information</legend>
+                    <button type="submit">Sign Up</button>
+                    <input id="email2" type ="email" name="textfield">
+                    <label for="email2">Retype Email: </label>
+                    <input id="email" type ="email" name="textfield">
+                    <label for="email">Email: </label>
+                    <input id="name" type ="text" name="textfield">
+                    <label for="name">Name: </label>
+                  </div>
                 </fieldset>
               </form>
             </div>
@@ -79,7 +84,7 @@
       </div>
     </main>
 
-     <footer>
+     <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube"></a></li>
