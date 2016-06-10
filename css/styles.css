@@ -21,6 +21,7 @@ a {
 
 a:hover, a:focus {
   color: #999;
+  text-decoration: underline;
 }
 
 /* Section Styles */
@@ -79,9 +80,12 @@ header h1 {
   font-size: 4rem;
   margin-bottom: 0;
   color: black;
+  font-weight: bold;
+  text-shadow: 5px 2px 2px white;
+  background-color: grey;
 }
 header h2 {
-  color: darkred;
+  color: orange;
 }
 .tag {
   color: black;
@@ -167,18 +171,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
 }
 
 a.social:hover {
